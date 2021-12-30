@@ -56,3 +56,20 @@ export const aboutImgAnime = {
     initial: { y: -400, opacity: 0},
     animate: { y: 0, opacity: 1, transition: {  duration: 4, type:'spring', delay:0.1 }}
 }
+
+/* Portfolio */
+
+export const portImg1Anime = {
+    initial: { y: -30, opacity: 0, scale: 0.1 },
+    animate: { y: 0, opacity: 1, scale: 1, transition: {duration: 1, delay: 0.3  }}
+}
+export const portImg2Anime = {
+    initial: { y: -30, opacity: 0, scale: 0.1 },
+    animate: { y: 0, opacity: 1, scale: 1, transition: { duration: 1, delay: 0.6 }}
+}
+export const portImg3Anime = {
+    initial: { y: -30, opacity: 0, scale: 0.1 },
+    animate: { y: 0, opacity: 1, scale: 1, transition:{ duration: 1, delay: 0.9  }}
+}
+
+/* Skills */
