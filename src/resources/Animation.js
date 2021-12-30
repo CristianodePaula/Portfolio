@@ -45,3 +45,14 @@ export const introPAnime = {
     initial: { scale: 0, opacity: 0 },
     animate: { scale: 1, opacity: 1, transition: { duration: 1, delay: 2 }}
 }
+
+/* About */
+
+export const aboutTextAnime = {
+    initial: { y: 200, opacity: 0 },
+    animate: { y: 0, opacity: 1, transition: {  duration: 4, type:'spring', delay:0.4 }}
+}
+export const aboutImgAnime = {
+    initial: { y: -400, opacity: 0},
+    animate: { y: 0, opacity: 1, transition: {  duration: 4, type:'spring', delay:0.1 }}
+}
