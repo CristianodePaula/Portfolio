@@ -1,0 +1,211 @@
+/* --- COMPONENTS --- */
+
+body {
+    overflow: hidden;
+}
+
+/* Navbar */
+
+.navbar_container {
+    font-size: 45px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    z-index: 5;
+}
+.navbar_link {
+    color: white;
+    font-size: 45px;
+    text-decoration: none;
+}
+.navbar_link:hover {
+    color: black;
+}
+.navbar_about {
+    position: absolute;
+    top: 5%;
+    left: 25%; 
+}
+.navbar_contact {
+    position: absolute;
+    bottom: 5%;
+    left: 65%;
+}
+.navbar_skills {
+    position: absolute;
+    justify-content: center;
+    top: 60%;
+    left: calc(1rem + 0vw);
+    transform: rotate(90deg) translate(-50%, -50%);
+}
+.navbar_portfolio {
+    position: absolute;
+    justify-content: center;
+    top: 40%;
+    right: calc(1rem + 2vw);
+    transform: rotate(-90deg) translate(-50%, -50%);
+}
+@media screen and (max-width: 700px) {
+    .navbar_link {
+        font-size: 30px;
+    }
+    .navbar_about {
+        top: 2%;
+        left: 20%;
+    }
+    .navbar_skills {
+        left: calc(-2rem + 0vw);
+        top: 60%;
+    }
+    .navbar_portfolio {
+        right: calc(-1rem + 1vw);
+        top: 30%;
+    }
+    .navbar_contact {
+        left: 70%;
+        bottom: 2%;
+    }
+}
+
+/* SocialLinks */
+
+.social_links_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    color: white;
+    bottom: 0;
+    right: 2rem;
+}
+.social_links_icon {
+    font-size: 30px;
+    margin: 3px;
+    text-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+.social_links_icon:hover {
+    color: black;
+}
+.social_links_line {
+    width: 2px;
+    height: 8rem; 
+    background-color: white;
+}
+.social_links_line:hover {
+    color: black;
+}
+@keyframes float {
+    0% { transform: translateY(-20px) }
+    50% { transform: translateY(25px) translateX(25px) }
+    100% { transform: translateY(-20px) }
+}
+@media screen and (max-width: 700px) {
+    .social_links_container {
+        right: 1rem;
+    }
+    .social_links_icon {
+        font-size: 20px;
+    }
+    .social_links_line {
+        max-height: 2rem;
+    }
+}
+
+/* SoundBar */
+
+.sound_bar_container {
+    display: flex;
+    position: fixed;
+    left: 5rem;
+    top: 2.5rem;
+    cursor: pointer;  
+    animation: float 4s ease infinite;
+}
+.sound_bar_container:hover {
+    color: black;
+}
+@media screen and (max-width: 700px) {
+    .sound_bar_container {
+    font-size: 20px;
+    left: 1.5rem;
+    }
+}
+
+/* ButtomReturn */
+
+.buttom_return_icon {
+    position: absolute; 
+    top: 0%;
+    padding: 40px;
+    margin-left: 100px;
+    color: white;
+    font-size: 60px;
+    right: calc(1rem + 2vw);
+    cursor: pointer;
+    animation: pulse 4s ease infinite;
+    z-index: 5;
+}
+.buttom_return_icon:hover {
+    color: black;
+}
+    @keyframes pulse {
+        0% { transform: scale(1) }
+        50% { transform: scale(0.7) }
+        100% { transform: scale(1) }
+}
+@media screen and (max-width: 700px) {
+    .buttom_return_icon {
+        font-size: 30px;
+        right: calc(-0.5rem + 0vw);
+    }
+}
+
+/* --- PAGES --- */
+
+/* Intro */
+
+.intro_container {
+    background: url("./img/intro.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+.intro_container h1 {
+    position: absolute;
+    margin: 250px 0 0 250px;
+    font-size: 65px;
+    color: red;
+    text-transform: uppercase;
+}
+.intro_container p {
+    position: absolute;
+    margin: 350px 0 0 250px;
+    font-size: 50px;
+    color: white;  
+}
+.intro_container img {
+    margin: 120px 0 0 850px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0.5;
+    cursor: pointer;  
+}
+@media screen and (max-width: 700px) {
+    .intro_container h1 {
+        margin: 400px 0 0 100px;
+        font-size: 35px;
+    }
+    .intro_container p {
+        margin: 500px 0 0 100px;
+        font-size: 30px;   
+    }
+    .intro_container img {
+        margin: 100px 0 0 150px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
