@@ -73,3 +73,18 @@ export const portImg3Anime = {
 }
 
 /* Skills */
+
+export const skillsB1Anime = {
+    initial: { y: 100 , opacity: 0, scale: 0.1, rotate: -90 },
+    animate: { y: 0, opacity: 1, scale: 1, rotate: 0, transition: {duration: 2, delay: 0.5, type:'spring', ease: 'easeInOut'}}
+}
+export const skillsB2Anime = {
+    initial: { x: 100 , opacity: 0, scale: 0.1, rotate: 180 },
+    animate: { x: 0, opacity: 1, scale: 1, rotate: 0, transition: {duration: 3, delay: 0.8, type:'spring', ease: 'easeInOut'}}
+}
+export const skillsB3Anime = {
+    initial: { y: 100 , opacity: 0, scale: 0.1, rotate: 360 },
+    animate: { y: 0, opacity: 1, scale: 1, rotate: 0, transition: {duration: 2, delay: 1.1, type:'spring', ease: 'easeInOut'}}
+}
+
+/* Contact */
