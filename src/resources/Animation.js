@@ -88,3 +88,18 @@ export const skillsB3Anime = {
 }
 
 /* Contact */
+
+export const contactAnime = {
+    initial: { opacity: 0, scale: 0 },
+    animate:{
+        opacity: 1,
+        scale: [1, 0.5, 1, 0.5, 1],
+        rotate: [0, 0, 270, 270, 0],
+        borderRadius: ["10%", "50%", "10%", "50%", "10%"], 
+        transition: { duration: 1.5, ease: 'backInOut' }}
+}
+export const contactTAnime = {
+    initial: { x: -100, opacity: 0, },
+    animate: { x: 0, opacity: 1, transition: {  duration: 4, type:'spring', stiffness: 1000, delay:0.4 }}
+}
+

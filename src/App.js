@@ -4,6 +4,7 @@ import Intro from "./pages/Intro"
 import About from "./pages/About"
 import Porftolio from './pages/Porftolio'
 import Skills from './pages/Skills'
+import Contact from './pages/Contact'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Route path="/about" element={<About />} />
       <Route path="/portfolio" element={<Porftolio />} />
       <Route path="/skills" element={<Skills />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   </Router>
   )
