@@ -4,11 +4,13 @@ import ButtomReturn from '../components/ButtomReturn'
 import contact from '../video/contact.mp4'
 import { FaMailBulk, FaPhoneAlt, FaCity  } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import { contactTAnime, contactAnime } from '../resources/Animation'
+import { contactInfoAnime, contactFormAnime, pageAnime } from '../resources/Animation'
 
 export default function Contact() {
     return (
-        <div className='contact_container'>
+        <motion.div className='contact_container'
+        variants={pageAnime} initial='initial' animate='animate'
+        >
             <NavBar />
             <ButtomReturn /> 
             <video autoPlay 
@@ -20,16 +22,16 @@ export default function Contact() {
             >
             <source src={contact} type='video/mp4' />
             </video>
-            <motion.div className='contact_info' variants={contactTAnime} initial='initial' animate='animate'>
+            <motion.div className='contact_info' variants={contactInfoAnime} initial='initial' animate='animate'>
           <div>
-              < FaCity />
+              <FaCity />
               <h2> Endereço </h2>
           </div>
           <div>
               <p>Edorado / Contagem - MG Brazil</p>
           </div>
           <div>
-              < FaPhoneAlt />
+              <FaPhoneAlt />
               <h2> Telefone </h2>
           </div>
           <div>
@@ -43,7 +45,7 @@ export default function Contact() {
               <p>christianodipaulla@gmail.com</p>
           </div>
       </motion.div>
-      <motion.div className='contact_form' variants={contactAnime} initial='initial' animate='animate'>
+      <motion.div className='contact_form' variants={contactFormAnime} initial='initial' animate='animate'>
             <form>
             <h2>Envie uma mensagem</h2>
               <div>
@@ -64,7 +66,7 @@ export default function Contact() {
               </div>
             </form>
       </motion.div>
-    </div>
+    </motion.div>
     )
 }
 

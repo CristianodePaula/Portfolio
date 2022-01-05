@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef} from 'react'
-import ParticlesIntro from '../resources/ParticlesIntro'
 import NavBar from '../components/NavBar'
+import ParticlesIntro from '../resources/ParticlesIntro'
 import Programmer from '../img/programmer.jpg'
 import { init } from 'ityped'
 import { motion } from 'framer-motion'
-import { introH1Anime, introPAnime } from '../resources/Animation'
+import { pageAnime, introH1Anime, introPAnime } from '../resources/Animation'
 
 export default function Intro () {
     
@@ -22,9 +22,9 @@ export default function Intro () {
     },[])  
 
     return ( 
-        <div className='intro_container'>
-            <ParticlesIntro />
+        <div className='intro_container' variants={pageAnime} initial='initial' animate='animate'>
             <NavBar />
+            <ParticlesIntro />
             <motion.h1 variants={introH1Anime} initial='initial' animate='animate'>Seja Bem vindo!</motion.h1>
             <motion.p variants={introPAnime} initial='initial' animate='animate' ref={textRef}> </motion.p>
             <motion.img src={Programmer} drag dragConstraints={{right: 10, left: 10, top: 10, bottom: 10}} 

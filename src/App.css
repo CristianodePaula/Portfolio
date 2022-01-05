@@ -10,7 +10,7 @@ body {
     font-size: 45px;
     color: white;
     text-shadow: 3px 3px 3px black;
-    z-index: 1;
+    z-index: 5;
 }
 .navbar_link {
     color: white;
@@ -52,6 +52,10 @@ body {
         top: 2%;
         left: 20%;
     }
+    .navbar_contact {
+        bottom: 2%;
+        left: 60%;
+    }
     .navbar_skills {
         left: calc(-2rem + 0vw);
         top: 60%;
@@ -59,10 +63,6 @@ body {
     .navbar_portfolio {
         right: calc(-1rem + 1vw);
         top: 30%;
-    }
-    .navbar_contact {
-        left: 70%;
-        bottom: 2%;
     }
 }
 
@@ -77,33 +77,26 @@ body {
     bottom: 0;
     right: 2rem;
 }
-.social_links_icon {
+.social_links_container span {
     font-size: 30px;
     margin: 3px;
     text-shadow: 3px 3px 3px black;
     cursor: pointer;
 }
-.social_links_icon:hover {
+.social_links_container span:hover {
     color: black;
+    transition: all 0.5s ease;
 }
 .social_links_line {
     width: 2px;
     height: 8rem; 
     background-color: white;
 }
-.social_links_line:hover {
-    color: black;
-}
-@keyframes float {
-    0% { transform: translateY(-20px) }
-    50% { transform: translateY(25px) translateX(25px) }
-    100% { transform: translateY(-20px) }
-}
 @media screen and (max-width: 700px) {
     .social_links_container {
         right: 1rem;
     }
-    .social_links_icon {
+    .social_links_container span {
         font-size: 20px;
     }
     .social_links_line {
@@ -119,10 +112,18 @@ body {
     left: 5rem;
     top: 2.5rem;
     cursor: pointer;  
+    z-index: 2;
+    color: white;
+    font-size: 45px;
     animation: float 4s ease infinite;
 }
 .sound_bar_container:hover {
     color: black;
+}
+@keyframes float {
+    0% { transform: translateY(-10px) }
+    50% { transform: translateY(15px) translateX(15px) }
+    100% { transform: translateY(-10px) }
 }
 @media screen and (max-width: 700px) {
     .sound_bar_container {
@@ -140,13 +141,14 @@ body {
     margin-left: 100px;
     color: white;
     font-size: 60px;
-    right: calc(1rem + 2vw);
+    right: calc(1rem + 0vw);
     cursor: pointer;
-    z-index: 1;
     animation: pulse 4s ease infinite;
+    z-index: 5;
 }
 .buttom_return_icon:hover {
     color: black;
+    transition: all 0.2  ease;
 }
     @keyframes pulse {
         0% { transform: scale(1) }
@@ -161,6 +163,12 @@ body {
 }
 
 /* --- PAGES --- */
+
+/* Home */
+
+.home_container {
+    background-color: black;
+}
 
 /* Intro */
 
@@ -259,19 +267,24 @@ body {
     background-position: center;
     height: 100vh;
     width: 100vw;
-    display: grid;
-    justify-content: center;
     overflow:auto;
 }
-.portfolio_container img {
+.portfolio_gallery {
+    padding: 60px;
+    display: grid;
+    justify-content: center;    
+}
+.portfolio_gallery img {
     height: 300px;
+    width: 400px;
     border-radius: 10%;
     margin: 20px;
+    cursor: pointer;
 }
 @media screen and (max-width: 700px) {
-    .portfolio_container img {
+    .portfolio_gallery img {
         height: 200px;
-        border-radius: 10%;
+        width: 300px;
         margin: 10px;
     }
 }
@@ -285,6 +298,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+.skills_container video {
+    width: 100vw;
+}
 .skills_box {
     display: flex;
     justify-content: center;
@@ -294,16 +310,14 @@ body {
     border-radius: 10px;
     height: 320px;
     width: 200px;
-    padding: 32px;
+    padding: 30px;
     margin: 30px;
     background: white;
-    filter: opacity(0.7);
-    z-index: 1;
+    filter: opacity(0.7);  
 }
 .skills_box h1 {
     color: black;
     font-size: 20px;
-    margin-bottom: 10px;
 }
 .skills_box h3 {
     color: black;
@@ -329,7 +343,7 @@ body {
 	height: 100%;
 	width: 0;
 	opacity: 0;
-	transition: 1s ease 0.3s;
+	transition: 4s ease 0.3s;
 }
 @media screen and (max-width: 700px) {
     .skills_container {
@@ -342,8 +356,8 @@ body {
     }
     .skills_box {
         height: 100px;
-        width: 180px;
-        margin: 8px;
+        width: 200px;
+        margin: 10px;
     }
     .skills_box h1 {
         font-size: 10px;
@@ -359,7 +373,7 @@ body {
     }
 }
 
-/* Contact */
+/* Contact */ 
 
 .contact_container {
     height: 100vh;
@@ -372,7 +386,7 @@ body {
     width: 100vw;
 }
 .contact_info {
-    z-index: 1;
+    z-index: 3;
 }
 .contact_info div {
     display: flex;

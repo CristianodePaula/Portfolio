@@ -1,3 +1,11 @@
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91747232/148144120-3c110356-6a2f-4151-9da4-aab23ccaa44d.gif" height="250px"/>
+</p>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91747232/148144457-844cf8af-8545-42ac-9ae8-cc6a74c173fc.gif" height="400px"/>
+</p>
+<hr>
+
 # PORTFOLIO
 
 ## 🚀 Starting

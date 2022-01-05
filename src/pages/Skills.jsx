@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar'
 import ButtomReturn from '../components/ButtomReturn'
 import skills from '../video/skills.mp4'
 import { motion } from 'framer-motion'
-import { skillsB1Anime, skillsB2Anime, skillsB3Anime } from '../resources/Animation'
+import { skillsB1Anime, skillsB2Anime, skillsB3Anime, pageAnime } from '../resources/Animation'
 
 export default function Skills() {
 
@@ -29,16 +29,17 @@ export default function Skills() {
         }
 
         return (
-            <div className='skills_container'>
-             <NavBar />
-             <ButtomReturn />
+            <motion.div className='skills_container'
+            variants={pageAnime} initial='initial' animate='animate'
+            >
+            <NavBar />
+            <ButtomReturn />
              <video autoPlay 
              muted
              loop
              style={{
                 position: "fixed",
-              }}
-             >  
+              }}>  
              <source src={skills} type='video/mp4'/>
              </video>
             <motion.div className='skills_box' 
@@ -75,6 +76,6 @@ export default function Skills() {
                 <h3> Redux </h3>
                 <Progress done="50"/>
            </motion.div>
-        </div>        
+        </motion.div>        
     )
 } 

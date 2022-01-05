@@ -1,21 +1,24 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import SoundBar from './components/SoundBar'
 import Intro from "./pages/Intro"
 import About from "./pages/About"
-import Porftolio from './pages/Porftolio'
-import Skills from './pages/Skills'
-import Contact from './pages/Contact'
+import Skills from "./pages/Skills"
+import Porftolio from "./pages/Porftolio"
+import Contact from "./pages/Contact"
 
 export default function App() {
   return (
-    <Router>
-    <Routes>
-      <Route path="/" element={<Intro />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/portfolio" element={<Porftolio />} />
-      <Route path="/skills" element={<Skills />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
-  </Router>
+    <>
+      <SoundBar />
+        <Router>
+          <Routes>
+            <Route path="/" element={<Intro />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/portfolio" element={<Porftolio />} />
+            <Route path="/contact" element={<Contact />} />
+         </Routes>
+      </Router>
+    </>
   )
 }
