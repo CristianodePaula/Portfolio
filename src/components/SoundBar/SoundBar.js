@@ -1,8 +1,9 @@
 import React, {useState, useRef} from 'react'
-import backgroundmusic from '../music/backgroundmusic.mp3'
+import './soundBar.css'
+import backgroundmusic from '../../music/backgroundmusic.mp3'
 import { FaMusic } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import { soundBarAnime } from '../resources/Animation'
+import { soundBarAnime } from '../../resources/Animation'
 
 export default function SoundBar (){
 
@@ -20,7 +21,12 @@ export default function SoundBar (){
     }
     
     return (            
-        <motion.div className='sound_bar_container' onClick={()=> handleClick()} variants={soundBarAnime} initial='initial' animate='animate'>
+        <motion.div 
+            className='sound_bar_container' 
+            onClick={()=> handleClick()} 
+            variants={soundBarAnime} 
+            initial='initial' 
+            animate='animate'>
                 <FaMusic />   
                 <audio src={backgroundmusic} ref={ref} loop />           
         </motion.div> 

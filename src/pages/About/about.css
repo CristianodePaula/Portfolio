@@ -1,0 +1,40 @@
+.about_container {
+    background: url("../../images/back.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_container p {
+    width: 550px;
+    font-size: 35px;
+    color: white;
+    text-align: center;   
+    margin: 50px;
+    text-shadow: 2px 2px 2px #000;
+}
+.about_container img {
+    width: 340px;
+    height: 380px;  
+    border-radius: 50%;
+    object-fit: cover;  
+    filter: grayscale(50%);
+    box-shadow: 1px 3px 3px white;
+}
+@media screen and (max-width: 700px) {
+    .about_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about_container p {
+        width: 300px;
+        font-size: 22px;
+    }
+    .about_container img {
+        width: 200px;
+        height: 250px;
+    }
+}

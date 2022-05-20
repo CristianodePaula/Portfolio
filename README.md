@@ -1,12 +1,7 @@
-<p align="center">
-<img src="https://user-images.githubusercontent.com/91747232/148144120-3c110356-6a2f-4151-9da4-aab23ccaa44d.gif" height="250px"/>
-</p>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/91747232/148144457-844cf8af-8545-42ac-9ae8-cc6a74c173fc.gif" height="400px"/>
-</p>
-<hr>
-
 # PORTFOLIO
+
+Click to watch the video on youtube 
+[![Watch the video](https://user-images.githubusercontent.com/91747232/169617664-b64ce857-9f4e-4015-bc87-53a366790baa.png)](https://www.youtube.com/watch?v=-KsHpPDn7tc)
 
 ## 🚀 Starting
 
@@ -21,15 +16,6 @@ This project uses framer-motion animation resources, built in a traditional way.
 * React
 * Framer-Motion
 
-## 🔧 Installations
-
-npm
-* npm install normalize.css
-* npm install react-icons --save
-* npm install ityped
-* npm install react-tsparticles
-* npm install framer-motion
-* npm install react-router-dom
 
 ## 🛠️ Built with
 
@@ -37,7 +23,7 @@ npm
 
 ## 📌 Version
 
-I performed a commit per component. New selected commits will be added to improve features and syntax.
+1.0
 
 ## ✒️ Author
 

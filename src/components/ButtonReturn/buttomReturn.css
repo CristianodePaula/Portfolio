@@ -1,0 +1,27 @@
+.buttom_return_icon {
+    position: absolute; 
+    top: 0%;
+    padding: 40px;
+    margin-left: 100px;
+    color: white;
+    font-size: 60px;
+    right: calc(1rem + 0vw);
+    cursor: pointer;
+    animation: pulse 4s ease infinite;
+    z-index: 5;
+}
+.buttom_return_icon:hover {
+    color: dimgray;
+    transition: all 0.2  ease;
+}
+    @keyframes pulse {
+        0% { transform: scale(1) }
+        50% { transform: scale(0.7) }
+        100% { transform: scale(1) }
+}
+@media screen and (max-width: 700px) {
+    .buttom_return_icon {
+        font-size: 30px;
+        right: calc(-0.5rem + 0vw);
+    }
+}

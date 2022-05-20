@@ -1,0 +1,25 @@
+.sound_bar_container {
+    display: flex;
+    position: fixed;
+    left: 5rem;
+    top: 2.5rem;
+    cursor: pointer;  
+    z-index: 2;
+    color: white;
+    font-size: 45px;
+    animation: float 4s ease infinite;
+}
+.sound_bar_container:hover {
+    color: dimgray;
+}
+@keyframes float {
+    0% { transform: translateY(-10px) }
+    50% { transform: translateY(15px) translateX(15px) }
+    100% { transform: translateY(-10px) }
+}
+@media screen and (max-width: 700px) {
+    .sound_bar_container {
+    font-size: 20px;
+    left: 1.5rem;
+    }
+}

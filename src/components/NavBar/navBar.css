@@ -1,0 +1,61 @@
+.navbar_container {
+    font-size: 45px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    z-index: 1;
+}
+.navbar_link {
+    color: white;
+    font-size: 45px;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+.navbar_link:hover {
+    color: dimgray;
+
+}
+.navbar_about {
+    position: absolute;
+    top: 5%;
+    left: 25%; 
+}
+.navbar_contact {
+    position: absolute;
+    bottom: 5%;
+    left: 65%;
+}
+.navbar_skills {
+    position: absolute;
+    justify-content: center;
+    top: 60%;
+    left: calc(1rem + 0vw);
+    transform: rotate(90deg) translate(-50%, -50%);
+}
+.navbar_portfolio {
+    position: absolute;
+    justify-content: center;
+    top: 40%;
+    right: calc(1rem + 2vw);
+    transform: rotate(-90deg) translate(-50%, -50%);
+}
+@media screen and (max-width: 700px) {
+    .navbar_link {
+        font-size: 30px;
+    }
+    .navbar_about {
+        top: 2%;
+        left: 20%;
+    }
+    .navbar_contact {
+        bottom: 2%;
+        left: 60%;
+    }
+    .navbar_skills {
+        left: calc(-2rem + -2vw);
+        top: 60%;
+    }
+    .navbar_portfolio {
+        right: calc(-1rem + 2vw);
+        top: 30%;
+    }
+}
