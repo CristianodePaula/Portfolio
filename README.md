@@ -23,7 +23,8 @@ This project uses framer-motion animation resources, built in a traditional way.
 
 ## 📌 Version
 
-1.0
+In this project I made quite long commits with didactic purposes. From version 1.0 onwards, there may be short commitments to improve the code.
+
 
 ## ✒️ Author
 
